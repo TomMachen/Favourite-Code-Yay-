@@ -1,0 +1,474 @@
+{\rtf1\ansi\deff0\adeflang1025
+{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\fswiss\fprq1\fcharset0 Consolas;}{\f4\fnil\fprq2\fcharset0 Microsoft YaHei;}{\f5\fnil\fprq2\fcharset0 Arial;}{\f6\fswiss\fprq0\fcharset128 Arial;}}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red43\green145\blue175;\red163\green21\blue21;\red0\green128\blue0;\red128\green128\blue128;}
+{\stylesheet{\s0\snext0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057 Default;}
+{\s15\sbasedon0\snext16\sb240\sa120\keepn\hich\af4\dbch\af5\afs28\loch\f2\fs28 Heading;}
+{\s16\sbasedon0\snext16\sb0\sa120 Text body;}
+{\s17\sbasedon16\snext17\sb0\sa120\dbch\af6 List;}
+{\s18\sbasedon0\snext18\sb120\sa120\noline\i\dbch\af6\afs24\ai\fs24 Caption;}
+{\s19\sbasedon0\snext19\noline\dbch\af6 Index;}
+}{\info{\creatim\yr2016\mo3\dy31\hr18\min0}{\revtim\yr2016\mo3\dy31\hr18\min1}{\printim\yr0\mo0\dy0\hr0\min0}{\comment OpenOffice}{\vern4110}}\deftab709
+
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse195\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Default;}}
+\formshade\paperh16838\paperw11906\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn11906\pghsxn16838\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+using}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ System;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+using}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ System.Collections.Generic;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+using}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ System.ComponentModel;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+using}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ System.Data;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+using}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ System.Drawing;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+using}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ System.Linq;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+using}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ System.Text;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+using}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ System.Threading.Tasks;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+using}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ System.Windows.Forms;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+namespace}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ Word_Calculator}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+    }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+public}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+partial}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+class}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ }{\cf3\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+Form1}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ : }{\cf3\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+Form}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+        }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+public}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ Form1()}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+InitializeComponent();}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+        }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+private}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+void}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ label1_Click(}{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+object}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ sender, }{\cf3\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+EventArgs}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ e)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+        }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+private}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+void}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ button1_Click(}{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+object}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ sender, }{\cf3\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+EventArgs}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ e)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+string}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ words = textBox1.Text;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+words = words.Trim(}{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+','}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+words = words.Trim(}{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+'.'}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+char}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+[] charArray = words.ToCharArray();}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+int}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ amountOfSpaces = 0;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+int}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ amountOfLetters = 0;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+int}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ amountOfWords = 0;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+int}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ word1Amount = 0;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+int}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ word2Amount = 0;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+int}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ word3Amount = 0;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+int}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ word4Amount = 0;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+int}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ word5Amount = 0;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+int}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ word6Amount = 0;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+int}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ lastLetterCount = 0;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+for}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ (}{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+int}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ j = 0; j < words.Length; j++)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+if}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ (}{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+char}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+.IsLetter(charArray[j]))}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+amountOfLetters++;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf5\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+//Get amount of letters.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+for}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ (}{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+int}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ i = 0; i < words.Length; i++)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+if}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ (}{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+char}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+.IsWhiteSpace(charArray[i]))}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+amountOfSpaces++;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+if}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ (amountOfSpaces == 1)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+listBox1.Items.Add(}{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+"Word 1: "}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ + i + }{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+" letters"}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+word1Amount = i;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+lastLetterCount = (amountOfLetters - word1Amount);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+else}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+if}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ (amountOfSpaces == 2)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+word2Amount = (i - word1Amount) - 1;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+listBox1.Items.Add(}{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+"Word 2: "}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ + word2Amount + }{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+" letters"}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+lastLetterCount = (i - word1Amount) - 1;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+else}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+if}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ (amountOfSpaces == 3)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+word3Amount = ((i - word2Amount) - word1Amount) - 2;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+listBox1.Items.Add(}{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+"Word 3: "}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ + word3Amount + }{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+" letters"}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+lastLetterCount = ((i - word2Amount) - word1Amount) - 2;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+else}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+if}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ (amountOfSpaces == 4)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+word4Amount = (((i - word3Amount) - word1Amount) - word2Amount) - 3;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+listBox1.Items.Add(}{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+"Word 4: "}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ + word4Amount + }{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+" letters"}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+lastLetterCount = (((i - word3Amount) - word1Amount) - word2Amount) - 3;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+else}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+if}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+(amountOfSpaces == 5)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+word5Amount = ((((i - word4Amount) - word1Amount) - word2Amount) - word3Amount) - 4;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+listBox1.Items.Add(}{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+"Word 5: "}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ + word5Amount + }{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+" letters"}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+lastLetterCount = ((((i - word4Amount) - word1Amount) - word2Amount) - word3Amount) - 4;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+else}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+if}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+(amountOfSpaces == 6)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+word6Amount = (((((i - word5Amount) - word1Amount) - word2Amount) - word3Amount) - word4Amount) - 5;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+listBox1.Items.Add(}{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+"Word 6: "}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ + word6Amount + }{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+" letters"}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+lastLetterCount = (((((i - word5Amount) - word1Amount) - word2Amount) - word3Amount) - word4Amount) - 5;}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+else}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                    }{\cf5\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+//Count letter amounts and display them.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+                }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+amountOfWords = words.Split(}{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+' '}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+).Count();}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+listBox1.Items.Add(}{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+"Last word amount: "}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ + lastLetterCount);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+listBox1.Items.Add(amountOfSpaces + }{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+" spaces"}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+listBox1.Items.Add(amountOfLetters + }{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+" letters"}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+listBox1.Items.Add(}{\cf4\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+"Amount of words: "}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ + amountOfWords);}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf5\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+//Finish displaying data.}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+        }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+private}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ }{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+void}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ button2_Click(}{\cf2\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+object}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ sender, }{\cf3\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+EventArgs}{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+ e)}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\{}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+listBox1.Items.Clear();}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+            }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+textBox1.Clear();}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+        }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\fs19\loch\f3
+    }{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\cf1\hich\af3\dbch\af3\afs19\rtlch \ltrch\loch\fs19\loch\f3
+\}}
+\par \pard\plain \s0\nowidctlpar{\*\hyphen2\hyphlead2\hyphtrail2\hyphmax0}\cf0\kerning1\hich\af7\langfe2052\dbch\af5\afs24\lang1081\loch\f0\fs24\lang2057{\rtlch \ltrch\loch
+}
+\par }
